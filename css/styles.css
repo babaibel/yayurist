@@ -225,6 +225,19 @@ img {
   padding: 0;
   text-align: center;
 }
+.h3-title {
+  font: 400 40px/42px 'Noto Serif', serif;
+  margin: 0 0 25px;
+  padding: 0;
+}
+.h4-title {
+  font: 400 24px/26px 'Noto Serif', serif;
+  margin: 0 0 35px;
+  padding: 0;
+}
+.content-text {
+  font: 19px/25px 'LatoWeb', sans-serif;
+}
 .logo {
   display: inline-block;
   vertical-align: middle;
@@ -385,6 +398,61 @@ img {
 }
 .specification-btn {
   display: inline-block;
+}
+.anketa {
+  padding: 65px 0;
+}
+.anketa__topline {
+  margin-bottom: 75px;
+}
+.anketa__btns {
+  float: right;
+  width: 305px;
+  margin-left: -305px;
+}
+.anketa__btns .neitral-btn {
+  margin-bottom: 15px;
+}
+.anketa__btns .neitral-btn:last-child {
+  margin-bottom: 0;
+}
+.anketa__desc {
+  float: left;
+  margin-right: 390px;
+}
+.anketa__panel-left {
+  float: left;
+  width: 305px;
+  margin-right: -305px;
+}
+.anketa__panel-right {
+  float: right;
+  margin-left: -335px;
+}
+.anketa__controls {
+  background: #fafafa;
+  padding: 35px 20px;
+}
+.anketa__form {
+  border: 3px solid #d9d9d9;
+  padding: 50px 30px;
+}
+.anketa__form-title {
+  font: 22px/26px 'Noto Serif', serif;
+  margin-bottom: 15px;
+}
+.neitral-btn {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 2px #bfbfbf;
+  color: #010101;
+  display: block;
+  font: 18px/20px 'LatoWeb', sans-serif;
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+}
+.neitral-btn:hover {
+  box-shadow: 0 0 0 3px #bfbfbf;
 }
 .form__row {
   margin-bottom: 22px;

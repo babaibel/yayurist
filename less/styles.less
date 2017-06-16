@@ -281,6 +281,21 @@ img{
 	padding: 0;
 	text-align: center;
 }
+.h3-title{
+	font: 400 40px/42px @fontn;
+	margin: 0 0 25px;
+	padding: 0;
+}
+.h4-title{
+	font: 400 24px/26px @fontn;
+	margin: 0 0 35px;
+	padding: 0;
+}
+
+.content-text{
+	font: 19px/25px @font;
+}
+
 
 .logo{
   display: inline-block;
@@ -462,6 +477,67 @@ img{
 	}
 }
 
+.anketa{
+	padding: 65px 0;
+	&__topline{
+		margin-bottom: 75px;
+	}
+	&__btns{
+		float: right;
+		width: 305px;
+		margin-left: -305px;
+		.neitral-btn{
+			margin-bottom: 15px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__desc{
+		float: left;
+		margin-right: 390px;
+	}
+
+	&__panel{
+		&-left{
+			float: left;
+			width: 305px;
+			margin-right: -305px;
+		}
+		&-right{
+			float: right;
+			margin-left: -335px;
+		}
+	}
+
+	&__controls{
+		background: #fafafa;
+		padding: 35px 20px;
+	}
+	&__form{
+		border: 3px solid #d9d9d9;
+		padding: 50px 30px;
+		&-title{
+			font: 22px/26px @fontn;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.neitral-btn{
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 0 2px #bfbfbf;
+    color: #010101;
+    display: block;
+    font: 18px/20px @font;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    &:hover{
+    	box-shadow: 0 0 0 3px #bfbfbf;
+    }
+}
+
 .form{
 	&__row{
 		margin-bottom: 22px;
@@ -598,7 +674,6 @@ img{
 	box-shadow: inset 5px 0 0 #6f6f6f;
 	font: 14px/16px @fontb;
     padding: 18px 50px 16px;
-    // transition: all 0.2s linear;
     color: #fff;
 	&:hover{
 		border-color: #ffed00;
