@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Верстка/Стартовая</title>
+	<title>Верстка/Листинг услуг</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
@@ -16,7 +16,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="main-page">
+<body class="">
 	<div class="layout">
 		<div class="layout__body">
 			<div class="layout__body__inner">
@@ -50,91 +50,64 @@
 									<a class="header-phone" href="tel:88007070436">8 800 707-04-36</a>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</header>
-				<div class="main-banner-wr">
+				<div class="services-wr bordered-section">
 					<div class="wrap">
-						<div class="main-banner">
-							<h1 class="h1-title">
-								On-line сервис<br> по работе с документами
-							</h1>
-							<h2 class="main-banner__sublitle">
-								Теперь создавать документы — это просто!
+						<div class="services">
+							<h2 class="h2-title">
+								Коммерческие организации
 							</h2>
-							<a href="#" class="main-banner__btn">
-								ПОПРОБОВАТЬ БЕСПЛАТНО
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="steps-wr">
-					<div class="wrap">
-						<div class="steps cleara">
-							<div class="steps__item">
-								<div class="steps-num">
-									1
-								</div>
-								<div class="steps-title">
-									Вводите личные данные
-								</div>
-								<div class="steps-text">
-									Вам потребуется только паспорт или иной документ, удостоверяющий личность.
-								</div>
-							</div>
-							<div class="steps__item">
-								<div class="steps-num">
-									2
-								</div>
-								<div class="steps-title">
-									Сервис автоматически подготовит документы
-								</div>
-								<div class="steps-text">
-									Сервис подготовит все необходимые документы в соответствии с законодательством.
-								</div>
-							</div>
-							<div class="steps__item">
-								<div class="steps-num">
-									3
-								</div>
-								<div class="steps-title">
-									Проверка документов юристом нашей компании
-								</div>
-								<div class="steps-text">
-									Вы сможете отправить нам ваши документы, и наши специалисты проверят правильность их заполнения и исправят все ошибки.
-								</div>
-							</div>
-							<div class="steps__item">
-								<div class="steps-num">
-									4
-								</div>
-								<div class="steps-title">
-									Регистрация в налоговой
-								</div>
-								<div class="steps-text">
-									Вам останется лишь распечатать документы и, следуя подробной инструкции, подать их в налоговую.
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="specification-wr">
-					<div class="wrap">
-						<div class="specification">
-							<div class="specification__item">
-								<div class="specification-title">
-									Онлайн сервис по формированию документов
-								</div>
-							</div>
-							<div class="specification__item specification__item--bg">
-								<div class="specification-text">
-									Незнание законов не освобождает от ответственности. Эта поговорка, возведенная в ранг закона, делает очень популярной предварительную юридическую помощь.
-								</div>
-								<div>
-									<a href="#" class="specification-btn yellow-btn">подробнее</a>
-								</div>
-								
+							<div class="services-form form">
+								<form>
+									<div class="form__row">
+										<div class="form__row-elem">
+											<input class="square-radio" id="OOO" type="radio" name="organization" checked hidden />
+	        								<label for="OOO">ООО</label>
+        								</div>
+        								<div class="form__row-elem">
+											<input class="square-radio" id="IP" type="radio" name="organization" hidden />
+	        								<label for="IP">ИП</label>
+        								</div>
+									</div>
+									<div class="services-form__text">
+										Выберите одну или несколько услуг
+									</div>
+									<div class="form__row">
+										<div class="form__row-elem">
+											<input class="ellipse-checkbox" id="change1" type="checkbox" name="services" checked hidden />
+											<label for="change1">Смена наименования</label>
+										</div>
+										<div class="form__row-elem">
+											<input class="ellipse-checkbox" id="change2" type="checkbox" name="services" hidden />
+											<label for="change2">Изменение числа участников</label>
+										</div>
+										<div class="form__row-elem">
+											<input class="ellipse-checkbox" id="change3" type="checkbox" name="services" checked hidden />
+											<label for="change3">Смена адреса</label>
+										</div>
+										<div class="form__row-elem">
+											<input class="ellipse-checkbox" id="change4" type="checkbox" name="services" hidden />
+											<label for="change4">Изменение уставного капитала</label>
+										</div>
+										<div class="form__row-elem">
+											<input class="ellipse-checkbox" id="change5" type="checkbox" name="services" checked hidden />
+											<label for="change5">Смена генерального директора</label>
+										</div>
+										<div class="form__row-elem">
+											<input class="ellipse-checkbox" id="change6" type="checkbox" name="services" hidden />
+											<label for="change6">Изменение кодов ОКВЭД</label>
+										</div>
+										<div class="form__row-elem">
+											<input class="ellipse-checkbox" id="change7" type="checkbox" name="services" hidden />
+											<label for="change7">Ликвидация</label>
+										</div>
+									</div>
+									<div class="form-row">
+										<a href="#" class="dark-btn inline-btn">НАЧАТЬ ВНЕСЕНИЕ ИЗМЕНЕНИЙ →</a>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
@@ -173,41 +146,6 @@
 								</div>
 								<div class="advantages-text">
 									Создавайте свои шаблоны договоров и делитесь с клиентами в считанные секунды.
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="trial-wr">
-					<div class="wrap">
-						<div class="trial">
-							<div class="trial__item">
-								<div class="trial-text">
-									Попробуйте бесплатную 30-дневную версию
-								</div>
-							</div>
-							<div class="trial__item trial__item--bg">
-								&nbsp;
-							</div>
-							<div class="trial__item">
-								<div class="trial-form form">
-									<form>
-										<div class="form__row">
-											<div class="form-label">Фамилия и Имя</div>
-											<input type="text" class="form-field">
-										</div>
-										<div class="form__row">
-											<div class="form-label">Номер телефона</div>
-											<input type="text" class="form-field">
-										</div>
-										<div class="form__row">
-											<input class="form-checkbox" id="trialcheck" type="checkbox" name="first" checked hidden />
-											<label class="form-cbx-label" for="trialcheck">Регистрируясь, вы подтверждаете свое согласие с <a href="#">договором-офертой</a></label>
-										</div>
-										<div class="form__row">
-											<input type="submit" value="ПОПРОБОВАТЬ БЕСПЛАТНО" class="trial-btn">
-										</div>
-									</form>
 								</div>
 							</div>
 						</div>
