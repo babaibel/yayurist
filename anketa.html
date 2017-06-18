@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/Glyphter.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -30,7 +31,7 @@
 								</a>
 								<a href="#" class="logo logo--rfb">
 									<span>При поддержке</span>
-									<img src="img/logo-rfb.svg" alt="Я Юрист">
+									<img src="img/svg/logo-rfb.svg" alt="">
 								</a>
 							</div>
 
@@ -56,31 +57,52 @@
 				<div class="anketa-wr">
 					<div class="wrap">
 						<div class="anketa">
-							<div class="anketa__topline cleara">
-								<div class="anketa__desc">
-									<h3 class="h3-title">Смена наименования</h3>
-									<h4 class="h4-title">Документы для смены наименования ООО за 5 минут</h4>
-									<div class="content-text">
-										Экономьте время, деньги и силы. Все документы проверены и составлены профессиональными юристами. 
+							<div class="anketa__topline">
+								<div class="anketa__topline-left">
+									<div class="anketa__topline-desc">
+										<h3 class="h3-title">Смена наименования</h3>
+										<h4 class="h4-title">Документы для смены наименования ООО за 5 минут</h4>
+										<div class="content-text">
+											Экономьте время, деньги и силы. Все документы проверены и составлены профессиональными юристами. 
+										</div>
 									</div>
 								</div>
-								<div class="anketa__btns">
-									<a href="#" class="neitral-btn">Заказать регистрацию под ключ</a>
-									<a href="#" class="neitral-btn">Задать вопрос</a>
-									<a href="#" class="neitral-btn">Проверка документов</a>
+								<div class="anketa__topline-right">
+									<div class="anketa__topline-btns">
+										<a href="#" class="neitral-btn">Заказать регистрацию под ключ</a>
+										<a href="#" class="neitral-btn">Задать вопрос</a>
+										<a href="#" class="neitral-btn">Проверка документов</a>
+									</div>
 								</div>
+								
 							</div>
 
-							<div class="anketa__panel cleara">
-								<div class="anketa__panel-left">
-									<div class="anketa__controls">
-										
+							<div class="anketa__container cleara">
+								<div class="anketa__container-left">
+									<div class="anketa__points">
+										<div class="anketa__points-item anketa__points-item--ready">
+											Данные компании
+										</div>
+										<div class="anketa__points-item anketa__points-item--error">
+											Выбор типа изменений
+										</div>
+										<div class="anketa__points-item">
+											Дата решения
+										</div>
+										<div class="anketa__points-item">
+											Документы
+										</div>
 									</div>
 								</div>
-								<div class="anketa__panel-right">
+								<div class="anketa__container-right">
 									<div class="anketa__form-title">Шаг 1 из 4</div>
 									<div class="anketa__form">
-										
+										<div class="form-bar _ready">
+											<div class="form-bar__thumb" style="width: 100%;"></div>
+										</div>
+									</div>
+									<div class="anketa__form-controls">
+										<a href="#" class="dark-btn inline-btn">ВОЙТИ →</a>
 									</div>
 								</div>
 							</div>
@@ -97,10 +119,9 @@
 							<img src="img/logo-yayurist.png" alt="Я Юрист">
 						</a>
 						<a href="#" class="logo logo--rfb">
-							<img src="img/logo-rfb-black.svg" alt="Я Юрист">
+							<img src="img/svg/logo-rfb-black.svg" alt="">
 						</a>
 					</div>
-
 					<div class="footer__item">
 						<ul class="footer-menu">
 							<li class="footer-menu__item">
@@ -108,7 +129,6 @@
 							</li>
 						</ul>
 					</div>
-
 					<div class="footer__item">
 						<div class="footer__contacts">
 							<div class="icontext icontext--time">
@@ -128,8 +148,10 @@
 			<div class="form center">
 				<form>
 					<div class="form__row">
-						<div class="form-label">Номер телефона</div>
-						<input type="text" class="form-field">
+						<div class="form__row-label">Номер телефона</div>
+						<div class="form__row-input">
+							<input type="text" class="form-field">
+						</div>
 					</div>
 					<div class="form__row">
 						<input type="submit" value="ВОЙТИ →" class="popup-btn dark-btn">
@@ -146,16 +168,22 @@
 			<div class="form center">
 				<form>
 					<div class="form__row">
-						<div class="form-label">Фамилия и имя</div>
-						<input type="text" class="form-field">
+						<div class="form__row-label">Фамилия и имя</div>
+						<div class="form__row-input">
+							<input type="text" class="form-field">
+						</div>
 					</div>
 					<div class="form__row">
-						<div class="form-label">Номер телефона</div>
-						<input type="text" class="form-field">
+						<div class="form__row-label">Номер телефона</div>
+						<div class="form__row-input">
+							<input type="text" class="form-field">
+						</div>
 					</div>
 					<div class="form__row">
-						<input class="form-checkbox" id="cfirst" type="checkbox" name="first" checked hidden />
-						<label class="form-cbx-label" for="cfirst">Регистрируясь, вы подтверждаете свое согласие с <a href="#">договором-офертой</a></label>
+						<div class="form__row-input">
+							<input class="form-checkbox" id="cfirst" type="checkbox" name="first" checked hidden />
+							<label class="form-cbx-label" for="cfirst">Регистрируясь, вы подтверждаете свое согласие с <a href="#">договором-офертой</a></label>
+						</div>
 					</div>
 					<div class="form__row">
 						<input type="submit" value="ВОЙТИ →" class="popup-btn dark-btn">

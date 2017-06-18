@@ -264,7 +264,7 @@ img {
   padding-left: 30px;
 }
 .icontext--time {
-  background: url(../img/icons/footer-time-ico.svg) no-repeat left top;
+  background: url(../img/svg/footer-time-ico.svg) no-repeat left top;
 }
 .steps {
   padding: 60px 0 40px;
@@ -305,12 +305,12 @@ img {
   color: #000;
 }
 .advantages-icon {
-  width: 66px;
   display: inline-block;
   margin-bottom: 25px;
 }
-.advantages-icon img {
-  display: block;
+.advantages-icon .icon-man {
+  color: #000;
+  font-size: 66px;
 }
 .advantages-title {
   font: 26px/28px 'Noto Serif', serif;
@@ -370,76 +370,145 @@ img {
 }
 .specification__item {
   width: 50%;
+}
+.specification__item--left {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: streght;
 }
-.specification__item:first-child {
-  padding-bottom: 50%;
-  background: url(../img/specification-bg1.jpg) no-repeat right bottom #e8e8e8;
-}
-.specification__item:first-child img {
-  display: block;
-  width: 100%;
-}
-.specification__item--bg {
+.specification__item--right {
   background: url(../img/specification-bg.jpg) no-repeat center top / cover;
   padding: 65px;
 }
-.specification-title {
-  padding: 65px 65px 65px 30px;
+.specification__item-title {
+  padding: 65px 30px 0 30px;
   color: #010101;
   font: 36px/40px 'Noto Serif', serif;
+  background: #e8e8e8;
+  height: 50%;
 }
-.specification-text {
+.specification__item-img {
+  height: 50%;
+  width: 100%;
+  background: url(../img/specification-bg1.jpg) no-repeat center center / cover;
+}
+.specification__item-text {
   margin-bottom: 40px;
   color: #000000;
   font: 26px/30px 'Noto Serif', serif;
 }
-.specification-btn {
+.specification__btn {
   display: inline-block;
 }
 .anketa {
   padding: 65px 0;
 }
 .anketa__topline {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
   margin-bottom: 75px;
 }
-.anketa__btns {
-  float: right;
+.anketa__topline-right {
   width: 305px;
-  margin-left: -305px;
 }
-.anketa__btns .neitral-btn {
+.anketa__topline-btns {
+  width: 305px;
+}
+.anketa__topline-btns .neitral-btn {
   margin-bottom: 15px;
 }
-.anketa__btns .neitral-btn:last-child {
+.anketa__topline-btns .neitral-btn:last-child {
   margin-bottom: 0;
 }
-.anketa__desc {
-  float: left;
-  margin-right: 390px;
+.anketa__topline-desc {
+  padding-right: 85px;
 }
-.anketa__panel-left {
-  float: left;
+.anketa__container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.anketa__container-left {
+  display: block;
   width: 305px;
-  margin-right: -305px;
 }
-.anketa__panel-right {
-  float: right;
-  margin-left: -335px;
+.anketa__container-right {
+  width: 100%;
+  padding-left: 30px;
 }
-.anketa__controls {
+.anketa__points {
   background: #fafafa;
   padding: 35px 20px;
+  width: 305px;
+  counter-reset: counter;
+}
+.anketa__points-item {
+  font: 18px/22px 'Noto Serif', serif;
+  margin-bottom: 30px;
+}
+.anketa__points-item:last-child {
+  margin-bottom: 0;
+}
+.anketa__points-item:before {
+  content: counter(counter);
+  counter-increment: counter;
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border: 1px solid #9f9f9f;
+  font: 15px/28px 'Noto Serif', serif;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.anketa__points-item--ready {
+  font-weight: 700;
+  display: inline-block;
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.anketa__points-item--ready:before {
+  content: '\0042';
+}
+.anketa__points-item--ready:before {
+  border-color: #83b986;
+}
+.anketa__points-item--error:before {
+  border-color: #c85d5d;
 }
 .anketa__form {
   border: 3px solid #d9d9d9;
+  border-top: 0;
   padding: 50px 30px;
+  margin-bottom: 30px;
+  position: relative;
 }
 .anketa__form-title {
   font: 22px/26px 'Noto Serif', serif;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
+}
+.anketa__form .form-bar {
+  position: absolute;
+  left: -3px;
+  top: 0;
+  right: -3px;
+}
+.form-bar {
+  height: 3px;
+  background: #d9d9d9;
+}
+.form-bar__thumb {
+  background: #b06060;
+  height: 3px;
+}
+._ready .form-bar__thumb {
+  background: #83b986;
 }
 .neitral-btn {
   background: #fff none repeat scroll 0 0;
@@ -447,7 +516,7 @@ img {
   color: #010101;
   display: block;
   font: 18px/20px 'LatoWeb', sans-serif;
-  padding: 16px;
+  padding: 16px 5px;
   width: 100%;
   text-align: center;
 }
@@ -464,7 +533,7 @@ img {
   display: inline-block;
   margin: 0 10px 20px;
 }
-.form-label {
+.form__row-label {
   font: 19px/21px 'LatoWeb', sans-serif;
   margin-bottom: 7px;
   color: #010101;
@@ -478,24 +547,25 @@ img {
   display: block;
   width: 100%;
 }
-.form-cbx-label {
-  color: #abaaaa;
-  font: 14px/20px 'LatoWeb', sans-serif;
+.icon-v {
+  display: inline-block;
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.form-cbx-label a {
-  color: #abaaaa;
-  text-decoration: underline;
+.icon-v:before {
+  content: '\0042';
 }
-.form-cbx-label a:hover {
-  text-decoration: none;
-}
-.form-checkbox + label {
+.checkbox {
   cursor: pointer;
   position: relative;
   padding-left: 55px;
   display: block;
 }
-.form-checkbox + label:before {
+.checkbox:after {
   content: "";
   position: absolute;
   left: 0;
@@ -507,16 +577,32 @@ img {
   border: 1px solid #bfbfbf;
   background: #fff;
 }
-.form-checkbox:checked + label:after {
-  content: "";
-  color: #f00;
+.checkbox__icon {
+  color: #bfbfbf;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 33;
-  width: 40px;
-  height: 40px;
-  background: url("../img/icons/v.svg") no-repeat center center;
+  width: 42px;
+  height: 42px;
+  font-size: 18px;
+  line-height: 42px;
+  text-align: center;
+  opacity: 0;
+}
+.checkbox__text {
+  color: #abaaaa;
+  font: 14px/20px 'LatoWeb', sans-serif;
+}
+.checkbox__text a {
+  color: #abaaaa;
+  text-decoration: underline;
+}
+.checkbox__text a:hover {
+  text-decoration: none;
+}
+.checkbox input:checked + .checkbox__icon {
+  opacity: 1;
 }
 .square-radio + label {
   cursor: pointer;
@@ -565,7 +651,7 @@ img {
   top: 50%;
   margin-top: -7px;
   left: 30px;
-  background: url(../img/icons/v-rounded.svg) no-repeat left top;
+  background: url(../img/svg/v-rounded.svg) no-repeat left top;
   width: 15px;
   height: 14px;
 }
