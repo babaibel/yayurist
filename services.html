@@ -6,10 +6,9 @@
 
 	<title>Верстка/Листинг услуг</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/selectize.css" />
 	<link rel="stylesheet" href="css/styles.css">
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -23,8 +22,7 @@
 				<header class="header-wr">
 					<div class="wrap">
 						<div class="header">
-							
-							<div class="header__item">
+							<div class="header__left">
 								<a href="#" class="logo">
 									<img src="img/logo-yayurist.png" alt="Я Юрист">
 								</a>
@@ -34,7 +32,7 @@
 								</a>
 							</div>
 
-							<div class="header__item not-mob">
+							<div class="header__right">
 								<ul class="header-menu">
 									<li class="header-menu__item">
 										<a href="#auth-modal" class="js-popup-modal">Войти</a>
@@ -43,9 +41,6 @@
 										<a href="#register-modal" class="js-popup-modal">Зарегистрироваться</a>
 									</li>
 								</ul>
-							</div>
-
-							<div class="header__item">
 								<div class="header-phone-wr">
 									<a class="header-phone" href="tel:88007070436">8 800 707-04-36</a>
 								</div>
@@ -55,59 +50,113 @@
 				</header>
 				<div class="services-wr bordered-section">
 					<div class="wrap">
-						<div class="services">
-							<h2 class="h2-title">
-								Коммерческие организации
-							</h2>
-							<div class="services-form form">
-								<form>
-									<div class="form__row">
-										<div class="form__row-elem">
-											<input class="square-radio" id="OOO" type="radio" name="organization" checked hidden />
-	        								<label for="OOO">ООО</label>
-        								</div>
-        								<div class="form__row-elem">
-											<input class="square-radio" id="IP" type="radio" name="organization" hidden />
-	        								<label for="IP">ИП</label>
-        								</div>
-									</div>
+						<h2 class="h2-title">
+							Коммерческие организации
+						</h2>
+						<div class="services js-tab">
+							<div class="services-btns js-btns">
+								<div class="services-btns__item active">ООО</div>
+								<div class="services-btns__item">ИП</div>
+							</div>
+							<div class="services-tabs js-tabs">
+								<div class="services-tabs__item active">
 									<div class="services-form__text">
 										Выберите одну или несколько услуг
 									</div>
-									<div class="form__row">
-										<div class="form__row-elem">
-											<input class="ellipse-checkbox" id="change1" type="checkbox" name="services" checked hidden />
-											<label for="change1">Смена наименования</label>
+									<form>
+										<div class="services-form">
+											<div class="form__row">
+												<div class="form__row-elem">
+													<input class="ellipse-checkbox" id="change1" type="checkbox" name="services" checked hidden />
+													<label for="change1">
+														<span class="ellipse-checkbox__icon icon-rounded-v"></span>
+														Смена наименования
+													</label>
+												</div>
+												<div class="form__row-elem">
+													<input class="ellipse-checkbox" id="change2" type="checkbox" name="services" hidden />
+													<label for="change2">
+														<span class="ellipse-checkbox__icon icon-rounded-v"></span>
+														Изменение числа участников
+													</label>
+												</div>
+												<div class="form__row-elem">
+													<input class="ellipse-checkbox" id="change3" type="checkbox" name="services" checked hidden />
+													<label for="change3">
+														<span class="ellipse-checkbox__icon icon-rounded-v"></span>
+														Смена адреса
+													</label>
+												</div>
+												<div class="form__row-elem">
+													<input class="ellipse-checkbox" id="change4" type="checkbox" name="services" hidden />
+													<label for="change4">
+														<span class="ellipse-checkbox__icon icon-rounded-v"></span>
+														Изменение уставного капитала
+													</label>
+												</div>
+												<div class="form__row-elem">
+													<input class="ellipse-checkbox" id="change5" type="checkbox" name="services" checked hidden />
+													<label for="change5">
+														<span class="ellipse-checkbox__icon icon-rounded-v"></span>
+														Смена генерального директора
+													</label>
+												</div>
+												<div class="form__row-elem">
+													<input class="ellipse-checkbox" id="change6" type="checkbox" name="services" hidden />
+													<label for="change6">
+														<span class="ellipse-checkbox__icon icon-rounded-v"></span>
+														Изменение кодов ОКВЭД
+													</label>
+												</div>
+												<div class="form__row-elem">
+													<input class="ellipse-checkbox" id="change7" type="checkbox" name="services" hidden />
+													<label for="change7">
+														<span class="ellipse-checkbox__icon icon-rounded-v"></span>
+														Ликвидация
+													</label>
+												</div>
+											</div>
+											<div class="form-row">
+												<input type="submit" class="dark-btn inline-btn" value="НАЧАТЬ ВНЕСЕНИЕ ИЗМЕНЕНИЙ →">
+											</div>
 										</div>
-										<div class="form__row-elem">
-											<input class="ellipse-checkbox" id="change2" type="checkbox" name="services" hidden />
-											<label for="change2">Изменение числа участников</label>
-										</div>
-										<div class="form__row-elem">
-											<input class="ellipse-checkbox" id="change3" type="checkbox" name="services" checked hidden />
-											<label for="change3">Смена адреса</label>
-										</div>
-										<div class="form__row-elem">
-											<input class="ellipse-checkbox" id="change4" type="checkbox" name="services" hidden />
-											<label for="change4">Изменение уставного капитала</label>
-										</div>
-										<div class="form__row-elem">
-											<input class="ellipse-checkbox" id="change5" type="checkbox" name="services" checked hidden />
-											<label for="change5">Смена генерального директора</label>
-										</div>
-										<div class="form__row-elem">
-											<input class="ellipse-checkbox" id="change6" type="checkbox" name="services" hidden />
-											<label for="change6">Изменение кодов ОКВЭД</label>
-										</div>
-										<div class="form__row-elem">
-											<input class="ellipse-checkbox" id="change7" type="checkbox" name="services" hidden />
-											<label for="change7">Ликвидация</label>
-										</div>
+									</form>
+								</div>
+								<div class="services-tabs__item">
+									<div class="services-form__text">
+										Выберите одну или несколько услуг
 									</div>
-									<div class="form-row">
-										<a href="#" class="dark-btn inline-btn">НАЧАТЬ ВНЕСЕНИЕ ИЗМЕНЕНИЙ →</a>
-									</div>
-								</form>
+									<form>
+										<div class="services-form">
+											<div class="form__row">
+												<div class="form__row-elem">
+													<input class="ellipse-checkbox" id="change32" type="checkbox" name="services2" checked hidden />
+													<label for="change32">
+														<span class="ellipse-checkbox__icon icon-rounded-v"></span>
+														Смена адреса
+													</label>
+												</div>
+												<div class="form__row-elem">
+													<input class="ellipse-checkbox" id="change62" type="checkbox" name="services2" hidden />
+													<label for="change62">
+														<span class="ellipse-checkbox__icon icon-rounded-v"></span>
+														Изменение кодов ОКВЭД
+													</label>
+												</div>
+												<div class="form__row-elem">
+													<input class="ellipse-checkbox" id="change72" type="checkbox" name="services2" hidden />
+													<label for="change72">
+														<span class="ellipse-checkbox__icon icon-rounded-v"></span>
+														Ликвидация
+													</label>
+												</div>
+											</div>
+											<div class="form-row">
+												<input type="submit" class="dark-btn inline-btn" value="НАЧАТЬ ВНЕСЕНИЕ ИЗМЕНЕНИЙ →">
+											</div>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -117,7 +166,7 @@
 						<div class="advantages cleara">
 							<div class="advantages__item">
 								<div class="advantages-icon">
-									<img src="img/tik.svg" alt="">
+									<span class="icon-speed"></span>
 								</div>
 								<div class="advantages-title">
 									Экономит время
@@ -128,7 +177,7 @@
 							</div>
 							<div class="advantages__item">
 								<div class="advantages-icon">
-									<img src="img/mic.svg" alt="">
+									<span class="icon-mic"></span>
 								</div>
 								<div class="advantages-title">
 									Поддержка 24/7
@@ -139,7 +188,7 @@
 							</div>
 							<div class="advantages__item">
 								<div class="advantages-icon">
-									<img src="img/lk.svg" alt="">
+									<span class="icon-man"></span>
 								</div>
 								<div class="advantages-title">
 									Личный кабинет
@@ -175,9 +224,8 @@
 
 					<div class="footer__item">
 						<div class="footer__contacts">
-							<div class="icontext icontext--time">
-								пн-сб, с 9:00 до 21:00
-							</div>
+							<span class="icon-time"></span>
+							пн-сб, с 9:00 до 21:00
 						</div>
 					</div>
 				</div>
@@ -187,7 +235,7 @@
 
 	<div id="auth-modal" class="popup-block mfp-hide">
 		<div class="popup-block__body cleara">
-			<div class="popup-modal-dismiss"></div>
+			<span class="popup-modal-dismiss icon-cross"></span>
 			<h2 class="h2-popup-title">Вход</h2>
 			<div class="form center">
 				<form>
@@ -198,7 +246,7 @@
 						</div>
 					</div>
 					<div class="form__row">
-						<input type="submit" value="ВОЙТИ →" class="popup-btn dark-btn">
+						<input type="submit" value="ВОЙТИ →" class="inline-btn dark-btn">
 					</div>
 				</form>
 			</div>
@@ -207,7 +255,7 @@
 
 	<div id="register-modal" class="popup-block mfp-hide">
 		<div class="popup-block__body cleara">
-			<div class="popup-modal-dismiss"></div>
+			<span class="popup-modal-dismiss icon-cross"></span>
 			<h2 class="h2-popup-title">Регистрация</h2>
 			<div class="form center">
 				<form>
@@ -230,27 +278,24 @@
 						</div>
 					</div>
 					<div class="form__row">
-						<input type="submit" value="ВОЙТИ →" class="popup-btn dark-btn">
+						<input type="submit" value="ВОЙТИ →" class="inline-btn dark-btn">
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
 
-	<!-- 	<div class="popup-block mfp-hide" id="after-modal">
-		<div class="popup-block__header">
-			<div class="h2-popup-title js-popup-title">Ура</div>
-			<div class="popup-modal-dismiss"></div>
-		</div>
+	<div class="popup-block mfp-hide" id="after-modal">
 		<div class="popup-block__body cleara">
+			<span class="popup-modal-dismiss icon-cross"></span>
+			<div class="h2-popup-title js-popup-title">Ура</div>
 			<div class="content-text center js-popup-text"></div>
 		</div>
-	</div> -->
+	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/selectize.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>
