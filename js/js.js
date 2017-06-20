@@ -1,8 +1,8 @@
 var $W = $(window),
 	$D = $(document),
 	$H = $('html'),
-	$B = $('body'),
-	swidth=(window.innerWidth-$(window).width());
+	$B = $('body');
+	// swidth=(window.innerWidth-$(window).width());
 
 $(function() {
 
@@ -11,11 +11,11 @@ $(function() {
 		preloader: false,
 		focus: '#username',
 		showCloseBtn: false,
-		mainClass: 'popup-modal-overlay',
-		callbacks: {
-			open: function() { $('.header-wr').css('padding-right', swidth + "px"); }, 
-			close: function() { $('.header-wr').css('padding-right', 0); },
-		}
+		mainClass: 'popup-modal-overlay'
+		// callbacks: {
+		// 	open: function() { $('.header-wr').css('padding-right', swidth + "px"); }, 
+		// 	close: function() { $('.header-wr').css('padding-right', 0); },
+		// }
 	});
 
 	$(document).on('click', '.popup-modal-dismiss', function (e) {
@@ -47,10 +47,10 @@ $(function() {
 		$.magnificPopup.close();
 		$.magnificPopup.open({
 			showCloseBtn: false,
-			callbacks: {
-				open: function() { $('.header-wr').css('padding-right', swidth + "px"); }, 
-				close: function() { $('.header-wr').css('padding-right', 0); },
-			},
+			// callbacks: {
+			// 	open: function() { $('.header-wr').css('padding-right', swidth + "px"); }, 
+			// 	close: function() { $('.header-wr').css('padding-right', 0); },
+			// },
 			items: {
 				src: '#after-modal'
 			},

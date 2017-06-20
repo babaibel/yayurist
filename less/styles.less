@@ -122,6 +122,10 @@ img{
   outline:none;
 }
 
+.trn{
+	transition: all 0.3s ease;
+}
+
 .center{
   text-align: center;
 }
@@ -179,6 +183,7 @@ img{
 			padding: 17px 25px 15px;
 			border: 5px solid #e8e8e8;
 			margin: 0 5px;
+			.trn;
 			
 			&:hover {
 				border-color: #ffed00;
@@ -811,6 +816,7 @@ img{
 		font-size: 19px;
 		&:hover + .tooltip__text{
 			visibility: visible;
+			opacity:1;
 		}
 	}
 	&__text{
@@ -824,7 +830,8 @@ img{
 		z-index: 99999;
 		width: 345px;
 		visibility: hidden;
-		transition: 0.3s ease;
+		opacity:0;
+		.trn;
 		&:after{
 			content: '';
 			position: absolute;
@@ -880,6 +887,7 @@ img{
 	padding: 16px 5px;
 	width: 100%;
 	text-align: center;
+	.trn;
 	&:hover{
 		box-shadow: 0 0 0 3px #bfbfbf;
 	}
@@ -983,6 +991,8 @@ img{
 		padding: 15px 35px 15px;
 		box-shadow: 0 0 0 2px #e8e8e8 inset;
 		border-radius: 30px;
+		user-select: none;
+		.trn;
 	}
 	&__icon{
 		position: absolute;
@@ -1019,6 +1029,7 @@ img{
 	padding: 0 50px;
 	text-transform: uppercase;
 	color: #fff;
+	.trn;
 	&:hover{
 		border-color: #ffed00;
 	}
@@ -1403,7 +1414,7 @@ img{
 	}
 	.form__row._2cols {
 		display: block;
-		margin: 0;
+		margin: 0 0 20px;
 	}
 	.form__row-col {
 		padding: 0;
@@ -1537,6 +1548,9 @@ img{
 				 font: 22px/30px "Noto Serif",serif;
 				 text-align: center;
 			}
+			&--right{
+				text-align: center;
+			}
 		}
 	}
 	.trial-text {
@@ -1626,6 +1640,6 @@ img{
 		font: 16px/20px "Noto Serif",serif;
 	}
 	.tooltip__text{
-		max-width: 310px;
+		max-width: 305px;
 	}
 }
